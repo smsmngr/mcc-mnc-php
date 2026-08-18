@@ -1,0 +1,49 @@
+{
+    "name": "mcc-mnc/client",
+    "description": "Official PHP client for the MCC-MNC.dev API \u2014 mobile network code (MCC/MNC/PLMN) lookup, operator search, and phone-number network detection.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://mcc-mnc.dev",
+    "keywords": [
+        "mcc",
+        "mnc",
+        "plmn",
+        "mobile-network-codes",
+        "operator",
+        "carrier",
+        "telecom",
+        "phone",
+        "api-client"
+    ],
+    "support": {
+        "docs": "https://mcc-mnc.dev/docs",
+        "issues": "https://github.com/smsmngr/mcc-mnc-php/issues",
+        "source": "https://github.com/smsmngr/mcc-mnc-php"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "MccMnc\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MccMnc\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
